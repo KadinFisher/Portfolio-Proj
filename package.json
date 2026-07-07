@@ -1,0 +1,10 @@
+{
+  "name": "portfolio-learning-lab",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A personal portfolio used as a full-stack learning lab.",
+  "scripts": {
+    "client": "npx serve client",
+    "server": "cd server && npm run dev"
+  }
+}

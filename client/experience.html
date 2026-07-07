@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Experience | Sachin Ashok</title>
+  <meta name="description" content="Experience page for dynamic JavaScript rendering practice." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="navbar container" aria-label="Primary navigation">
+    <a href="index.html" class="navbar__brand">Sachin Ashok</a>
+    <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navMenu">☰</button>
+    <ul class="navbar__menu" id="navMenu">
+      <li><a href="index.html" class="navbar__link" data-nav="home">Home</a></li>
+      <li><a href="about.html" class="navbar__link" data-nav="about">About</a></li>
+      <li><a href="projects.html" class="navbar__link" data-nav="projects">Projects</a></li>
+      <li><a href="experience.html" class="navbar__link" data-nav="experience">Experience</a></li>
+      <li><a href="contact.html" class="navbar__link" data-nav="contact">Contact</a></li>
+    </ul>
+    <button class="theme-toggle" id="themeToggle" type="button">Dark</button>
+  </nav>
+</header>
+
+  <main>
+
+    <section class="page-hero section">
+      <div class="container">
+        <p class="eyebrow">Experience</p>
+        <h1>Practice rendering timeline data from JavaScript.</h1>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container timeline" id="experienceList">
+        <p class="empty-state">TODO: Render experience cards here with JavaScript.</p>
+      </div>
+    </section>
+
+  </main>
+
+<footer class="site-footer">
+  <div class="container footer__content">
+    <p>© 2026 Sachin Ashok. Learning Lab Portfolio.</p>
+    <div class="footer__links">
+      <a href="contact.html">Contact</a>
+      <a href="https://github.com/YOUR_USERNAME" target="_blank" rel="noreferrer">GitHub</a>
+      <a href="https://linkedin.com/in/YOUR_USERNAME" target="_blank" rel="noreferrer">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+
+  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/pages/experience.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sachin Ashok | Portfolio Learning Lab</title>
+  <meta name="description" content="A full-stack learning lab built around a personal portfolio website." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="navbar container" aria-label="Primary navigation">
+    <a href="index.html" class="navbar__brand">Sachin Ashok</a>
+    <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navMenu">☰</button>
+    <ul class="navbar__menu" id="navMenu">
+      <li><a href="index.html" class="navbar__link" data-nav="home">Home</a></li>
+      <li><a href="about.html" class="navbar__link" data-nav="about">About</a></li>
+      <li><a href="projects.html" class="navbar__link" data-nav="projects">Projects</a></li>
+      <li><a href="experience.html" class="navbar__link" data-nav="experience">Experience</a></li>
+      <li><a href="contact.html" class="navbar__link" data-nav="contact">Contact</a></li>
+    </ul>
+    <button class="theme-toggle" id="themeToggle" type="button">Dark</button>
+  </nav>
+</header>
+
+  <main>
+
+    <section class="hero section">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="eyebrow">Full-Stack Learning Lab</p>
+          <h1>Hi, I’m Sachin Ashok.</h1>
+          <p class="hero__description">This portfolio is also a learning project for vanilla JavaScript, APIs, Node.js, Express, PostgreSQL, and deployment.</p>
+          <div class="hero__actions">
+            <a href="projects.html" class="btn btn--primary">View Projects</a>
+            <a href="docs/frontend-learning-notes.html" class="btn btn--secondary">Learning Notes</a>
+          </div>
+        </div>
+        <div class="hero__image-wrapper" aria-label="Profile image placeholder">
+          <div class="hero__image-placeholder">SA</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--muted">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Learning Modules</p>
+          <h2>What this project teaches</h2>
+        </div>
+        <div class="card-grid">
+          <article class="card"><h3>Frontend</h3><p>DOM rendering, events, reusable components, storage, forms, and API calls.</p></article>
+          <article class="card"><h3>Backend</h3><p>Node.js, Express, REST routes, controllers, middleware, and validation.</p></article>
+          <article class="card"><h3>Database</h3><p>PostgreSQL tables, SQL queries, seed data, and persistent contact messages.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading section-heading--split">
+          <div><p class="eyebrow">Featured Work</p><h2>Selected projects</h2></div>
+          <a href="projects.html" class="text-link">View all projects →</a>
+        </div>
+        <div class="card-grid" id="featuredProjects">
+          <p class="empty-state">TODO: Render featured projects here with JavaScript.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+<footer class="site-footer">
+  <div class="container footer__content">
+    <p>© 2026 Sachin Ashok. Learning Lab Portfolio.</p>
+    <div class="footer__links">
+      <a href="contact.html">Contact</a>
+      <a href="https://github.com/YOUR_USERNAME" target="_blank" rel="noreferrer">GitHub</a>
+      <a href="https://linkedin.com/in/YOUR_USERNAME" target="_blank" rel="noreferrer">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+
+  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/pages/home.js"></script>
+</body>
+</html>

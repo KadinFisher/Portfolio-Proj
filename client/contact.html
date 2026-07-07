@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Sachin Ashok</title>
+  <meta name="description" content="Contact page for form validation and backend submission practice." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="navbar container" aria-label="Primary navigation">
+    <a href="index.html" class="navbar__brand">Sachin Ashok</a>
+    <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navMenu">☰</button>
+    <ul class="navbar__menu" id="navMenu">
+      <li><a href="index.html" class="navbar__link" data-nav="home">Home</a></li>
+      <li><a href="about.html" class="navbar__link" data-nav="about">About</a></li>
+      <li><a href="projects.html" class="navbar__link" data-nav="projects">Projects</a></li>
+      <li><a href="experience.html" class="navbar__link" data-nav="experience">Experience</a></li>
+      <li><a href="contact.html" class="navbar__link" data-nav="contact">Contact</a></li>
+    </ul>
+    <button class="theme-toggle" id="themeToggle" type="button">Dark</button>
+  </nav>
+</header>
+
+  <main>
+
+    <section class="page-hero section">
+      <div class="container">
+        <p class="eyebrow">Contact</p>
+        <h1>Practice forms, validation, storage, and backend POST requests.</h1>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+        <div>
+          <h2>Get in touch</h2>
+          <p>This contact form is for learning. First validate it on the frontend. Later, send it to your Express backend.</p>
+          <div class="contact-links">
+            <a href="mailto:placeholder@example.com">placeholder@example.com</a>
+            <a href="https://github.com/YOUR_USERNAME" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://linkedin.com/in/YOUR_USERNAME" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required />
+            <small class="error-message" data-error-for="name"></small>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
+            <small class="error-message" data-error-for="email"></small>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+            <small class="error-message" data-error-for="message"></small>
+          </div>
+          <button type="submit" class="btn btn--primary" id="submitButton">Send Message</button>
+          <p class="form-status" id="formStatus" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+<footer class="site-footer">
+  <div class="container footer__content">
+    <p>© 2026 Sachin Ashok. Learning Lab Portfolio.</p>
+    <div class="footer__links">
+      <a href="contact.html">Contact</a>
+      <a href="https://github.com/YOUR_USERNAME" target="_blank" rel="noreferrer">GitHub</a>
+      <a href="https://linkedin.com/in/YOUR_USERNAME" target="_blank" rel="noreferrer">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+
+  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/pages/contact.js"></script>
+</body>
+</html>

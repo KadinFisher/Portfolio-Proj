@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Sachin Ashok</title>
+  <meta name="description" content="Projects page for JavaScript rendering, filtering, and API practice." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="navbar container" aria-label="Primary navigation">
+    <a href="index.html" class="navbar__brand">Sachin Ashok</a>
+    <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navMenu">☰</button>
+    <ul class="navbar__menu" id="navMenu">
+      <li><a href="index.html" class="navbar__link" data-nav="home">Home</a></li>
+      <li><a href="about.html" class="navbar__link" data-nav="about">About</a></li>
+      <li><a href="projects.html" class="navbar__link" data-nav="projects">Projects</a></li>
+      <li><a href="experience.html" class="navbar__link" data-nav="experience">Experience</a></li>
+      <li><a href="contact.html" class="navbar__link" data-nav="contact">Contact</a></li>
+    </ul>
+    <button class="theme-toggle" id="themeToggle" type="button">Dark</button>
+  </nav>
+</header>
+
+  <main>
+
+    <section class="page-hero section">
+      <div class="container">
+        <p class="eyebrow">Projects</p>
+        <h1>Practice rendering, filtering, searching, and fetching project data.</h1>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">DOM + Events</p>
+          <h2>Local project data</h2>
+        </div>
+
+        <div class="toolbar" aria-label="Project tools">
+          <label class="search-label" for="projectSearch">Search projects</label>
+          <input id="projectSearch" class="search-input" type="search" placeholder="Search by title, tech, or description" />
+        </div>
+
+        <div class="filter-bar" aria-label="Project filters">
+          <button class="filter-btn active" data-filter="all" type="button">All</button>
+          <button class="filter-btn" data-filter="full-stack" type="button">Full Stack</button>
+          <button class="filter-btn" data-filter="ai" type="button">AI</button>
+          <button class="filter-btn" data-filter="frontend" type="button">Frontend</button>
+          <button class="filter-btn" data-filter="backend" type="button">Backend</button>
+        </div>
+
+        <div class="card-grid" id="projectList">
+          <p class="empty-state">TODO: Render project cards here with JavaScript.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--muted">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">API Practice</p>
+          <h2>GitHub repositories</h2>
+          <p>TODO: Use fetch, async/await, loading states, and error handling to render GitHub repos here.</p>
+        </div>
+        <div id="githubRepos" class="card-grid">
+          <p class="empty-state">TODO: Fetch repositories from GitHub API.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+<footer class="site-footer">
+  <div class="container footer__content">
+    <p>© 2026 Sachin Ashok. Learning Lab Portfolio.</p>
+    <div class="footer__links">
+      <a href="contact.html">Contact</a>
+      <a href="https://github.com/YOUR_USERNAME" target="_blank" rel="noreferrer">GitHub</a>
+      <a href="https://linkedin.com/in/YOUR_USERNAME" target="_blank" rel="noreferrer">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+
+  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/pages/projects.js"></script>
+</body>
+</html>
